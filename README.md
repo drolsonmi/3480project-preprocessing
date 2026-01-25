@@ -2,7 +2,7 @@
 __MATH 3480__: Machine Learning
 
 ## Project Overview
-Perform comprehensive data preprocessing on the *young-people-survey-responses* dataset to prepare it for predicting loneliness in young people.
+A survey was completed to examine the mental health of teenagers and young adults. The goal of this project is to perform comprehensive data preprocessing on the *young-people-survey-responses* dataset to prepare it for predicting loneliness in young people.
 
 **Submission Format:** Submit a **written report** (PDF or Word document) that includes all deliverables, code snippets, figures with captions, and documentation of your preprocessing decisions.
 
@@ -28,15 +28,11 @@ Your report should include:
    - Table showing first 5-10 rows
    - Summary of data types
 
-2. **Target Variable Identification**
-   - State which column represents "loneliness"
-   - Explain how you identified it
-   - Include visualization of target distribution with caption
-
-3. **Initial Data Quality**
+2. **Initial Data Quality**
+   - Identify the target variable (what we are trying to predict)
    - Summary table of missing values per column
 
-**Suggested Figures:** Sample data table, target distribution bar chart, missing values visualization
+***Suggested* Figures:** Sample data table, target distribution bar chart
 
 ---
 
@@ -47,13 +43,13 @@ Your report should include:
 ### Deliverables:
 
 1. **Univariate Analysis**
-   - For **numerical variables**: Include histograms or box plots for 5-8 key variables
-   - For **categorical variables**: Include bar charts showing frequency distributions for 5-8 key variables
+   - For **numerical variables**: Include histograms or box plots for key variables
+   - For **categorical variables**: Include bar charts showing frequency distributions for key variables
    - Caption each figure noting important observations (skewness, outliers, imbalanced categories, etc.)
    - Identify which variables have distributions that may require special handling
 
-2. **Relationship to Target Variable**
-   - Create visualizations exploring the relationship between 8-10 important variables and the target (loneliness)
+2. **Relationship to Target Variable (Bivariate Analysis)**
+   - Create visualizations exploring the relationship between important variables and the target (loneliness)
    - For **numerical predictors**: Use box plots, violin plots, or scatter plots grouped by target
    - For **categorical predictors**: Use grouped bar charts or stacked bar charts
    - Caption each figure explaining what relationship (if any) you observe
@@ -153,7 +149,7 @@ Your report should include:
 
 ---
 
-## Part 4: Train-Test Split
+## Part 4: Cross Validation (Train-Test Split)
 
 ### Deliverables:
 
@@ -231,11 +227,11 @@ If included: Confirm multiple linear regression model ran without errors.
 
 ## Report Formatting Guidelines
 
-- **Length**: 10-18 pages (including figures)
+- **Length**: 5 is ideal, but can be 3-7 pages (including figures)
 - **Font**: 11-12 point, readable font
 - **Margins**: 1-inch on all sides
 - **File format**: PDF or .docx
-- **Figures**: Readable size with numbered captions
+- **Figures**: Readable size with numbered captions, does not take up excessive space
 - **Code**: Only relevant snippets, properly formatted
 - **Writing**: Clear, professional, concise
 
@@ -243,7 +239,7 @@ If included: Confirm multiple linear regression model ran without errors.
 
 ## Submission Checklist
 
-- [ ] All seven sections included with deliverables
+- [ ] All sections included with deliverables
 - [ ] EDA section includes sufficient visualizations and analysis
 - [ ] EDA findings referenced in preprocessing decisions
 - [ ] All figures captioned and referenced in text
@@ -259,27 +255,25 @@ If included: Confirm multiple linear regression model ran without errors.
 
 | Category | Criteria | Points |
 |----------|----------|--------|
-| **1. Data Loading & Exploration** | Dataset overview with dimensions, sample, data types | 1 |
-| | Target variable identified with explanation | 1 |
-| | Initial data quality assessment with figures | 1 |
-| **2. Exploratory Data Analysis** | Univariate analysis with appropriate visualizations and observations | 2 |
-| | Relationship to target analysis with clear visualizations | 2 |
-| | Correlation analysis with heatmap and interpretation | 1.5 |
-| | Key findings summary showing thoughtful analysis | 1.5 |
-| **3. Preprocessing** | Complete discussion of removed variables | 2 |
-| | Missing value analysis with visualizations | 2 |
-| | Discussion of imputation strategy | 2 |
-| | All categorical variables identified and classified | 1 |
-| | Clear justifications for encoding choices | 2 |
-| | Results showing feature changes after preprocessing | 1 |
-| **4. Train-Test Split** | Split strategy explained with appropriate ratio | 2 |
-| **5. Feature Scaling** | Scaling decision table with justifications | 2 |
-| | Correct methodology (fit on train, no leakage) | 1 |
-| | Verification of successful scaling | 1 |
-| | Visual before/after comparison | 1 |
-| **6. Report Quality** | Well-organized, professionally formatted;<br>Figures/tables with captions, properly sized;<br>Clear writing, free of major errors;<br>Summary with thoughtful insights connecting EDA to preprocessing | 3 |
+| **1. Data Loading & Exploration** | Dataset overview with dimensions, sample, data types                 | 1 |
+|                                   | Initial data quality assessment with figures                         | 1 |
+| **2. Exploratory Data Analysis**  | Univariate analysis with appropriate visualizations and observations | 2 |
+|                                   | Relationship to target analysis with clear visualizations            | 2 |
+|                                   | Correlation analysis with heatmap and interpretation                 | 1.5 |
+|                                   | Key findings summary showing thoughtful analysis                     | 1.5 |
+| **3. Preprocessing**              | Discussion of Feature Selection (removed variables)                  | 2 |
+|                                   | Missing value analysis with visualizations                           | 2 |
+|                                   | Discussion of imputation strategy                                    | 2 |
+|                                   | All categorical variables identified and classified                  | 1 |
+|                                   | Clear justifications for encoding choices                            | 2 |
+| **4. Train-Test Split**           | Split strategy explained with appropriate ratio                      | 3 |
+| **5. Feature Scaling**            | Scaling decision table with justifications                           | 1 |
+|                                   | Correct methodology (fit on train, no leakage)                       | 2 |
+| **6. Report Quality**             | Well-organized, professionally formatted;<br>Figures/tables with captions, properly sized;<br>Clear writing, free of major errors;<br>Summary with thoughtful insights connecting EDA to preprocessing | 3 |
+| **7. Code**                       | Code file is included and works without errors                       | 3 |
 | | | |
 | **Total:** | | 30 |
 
 -----
+
 This assignment was created with the assistance of AI.
