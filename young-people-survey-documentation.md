@@ -8,3 +8,5 @@
 * The ['Siblings'] column is the number of siblings the person has
 * The ['Gender'] is male/female
 * The ['Village - town'] indicates whether the person lives in the city (urban living) or in a village (rural living)
+
+*Note*: This dataset can be found on the web. This dataset, however, has some additional information to test the students' skill with Data Science techniques for cleaning and handling datasets. 
